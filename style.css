@@ -1,0 +1,39 @@
+  /*
+  To use percentage(%) values to size the div element we'll have to:
+  - also give the html element 100% to size to the full height of the viewport
+  - and the same to the body element so it is 100% the height of the HTMl element
+  */
+  body, html {
+    height: 100%;
+    min-width: 100%;
+  }
+
+  .parallax {
+    height: 100%;
+    background-image: url("./austin.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+
+  .parallax2 {
+    height: 100%;
+    background-image: url("./mccombs.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .album1 {
+      background-image: url(./mccombs.jpeg);
+      background-size: cover;
+  }
+
+  @media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
